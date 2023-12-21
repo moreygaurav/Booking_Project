@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="mdiv">
+        <div class="login">
+            <h1 align="center" class="focus-in-contract-bck">Sign In</h1>
+        </div>
+        <div class="form">
+            <div class="form_login" align="center">
+                <form>
+                    <input type="text" name="username" placeholder="Enter username" id="un"><br>
+                    <input type="password" name="password" placeholder="Enter password" id="pwd">
+                    <p class="links"><a href="#">forgot password</a></p>
+                    <input type="button" name="button" value="login" onclick="submitForm()">
+                    <p class="links"><a href="#">create account</a></p>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        let un1 = "Suchit123";
+        let pwd1 = "Suchit@123";
+        function submitForm()
+        {
+            let un2 = document.getElementById("un").value;
+            let pwd2 = document.getElementById("pwd").value;
+            if(un1==un2 && pwd1==pwd2)
+            {
+                open("HomePage.html");
+            }
+            else{
+                alert("Incorrect credentials");
+            }
+        }
+    </script>
+    
+</body>
+</html>
