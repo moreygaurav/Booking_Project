@@ -7,20 +7,92 @@ html{
   scroll-behavior: smooth
 }
 .container-fluid {
-  background-color: rgb(233, 229, 229);
+  background-color:rgba(95, 92, 92,1);
+  position: fixed;
+  z-index: 20;
+  top: 0px;
+  left: 0px;
+  right: 10px;
+  width: 1490px;
 }
-.carousel {
-  height: 650px;
+/* corosal outer container */
+.carousel-fade{
+  top: 70px;
+  height: 615px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+/* corosal inner container */
+#corsl{
+  height: 600px;
   width: 100%;
 }
-.services {
-  height: 490px;
-  width: 98%;
-  margin-left: 17px;
+/* corosal 2 outer container */
+.outcont{
+  height: 300px;
+width: 1400px;
+margin-left: 3%;
 }
+.incont{
+  height: 415px;
+  width: 1265px;
+  /* background-color: red; */
+  margin-left: 100px;
+}
+.h{display: flex;
+width: 1490px;
+justify-content: center;
+height: 50px;
+margin-right: 10px;
+  margin-left:10px;
+  background-color: rgba(140, 185, 227, 0.7);
+}
+.cards-wrapper{
+  display: flex;
+  width: 1400px;
+  margin-left: 120px;
+  }
+.card{
+  margin-left: 20px;
+  margin: 0.5em; 
+  width: calc(/3);
+}
+#coritm2{
+    display: flex;
+    }
+#coritm3{
+      display: flex;
+      }
+/* corosal2 prev */
+.carousel-control-prev{
+  background-color: black;
+  margin-top: 150px;
+}
+/* corosal2 next  */
+.carousel-control-next{
+  background-color: black;
+  margin-top: 150px;
+}
+.background{
+  background-image: url(floral-background-6622475_1280.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1490px;
+  height: 716px;
+  position: fixed;
+  top: 0px;
+  z-index: -20;
+  left: 10px;
+  right: 20px;
+}
+
 .text p {
   font-size: 60px;
-  margin-left: 45%;
+  margin-left:45%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -32,13 +104,16 @@ html{
 }
 .dtexts p {
   text-align: justify;
-
   width: 650px;
   margin-right: 10px;
+}
+.card:hover{
+height: 125px;
 }
 .dtexts{
   height: 900px;
   width:100%;
+  margin-bottom: 50px;
 }
 .cards {
   display: flex;
@@ -52,7 +127,10 @@ html{
   margin-top: 0px;
 }
 #nav-link {
-  margin-left: 1000px;
+  margin-left: 150px;
+}
+.d-flex{
+  margin-left: 400px;
 }
 .nav-item{
   font-size: 22px;
@@ -62,33 +140,13 @@ html{
   width: 98%;
   margin-left: 10px;
 }
-
-.achiv1,
-.achiv2 {
-  display: flex;
-}
-.achiv1 {
+/* grid */
+.grid{
   height: 400px;
-  width: 93%;
-  margin-left: 60px;
+  width: 90%;
+  border: 2px solid black;
 }
-.achiv2 {
-  margin-left: 20px;
-  margin-left: 60px;
-}
-#img1{
-  margin-left: 10px;
-  width: 80%;
-}
-#img2{
-  margin-right: 10px;
-}
-#img1,
-#img2 {
-  height: 340px;
-  width: 650px;
-  background-color: grey;
-}
+
 /* icon animation */
 
 .flip-vertical-left {
@@ -133,13 +191,12 @@ html{
 .search{
   display: flex;
   position: absolute;
-  background-color:rgba(255, 255, 255, 0.7);
-  opacity: 20px;
-  z-index: 20;
-  width: 30%;
-  right: 10px;
-  top: 68%;
-  border-radius: 8%;
+  background-color:rgba(92, 119, 144, 0.5);
+  z-index: 5;
+  width: 32%;
+  right: 35px;
+  top: 390px;
+  border-radius: 7%;
   color: goldenrod;
 }
 #heding1{
@@ -154,15 +211,18 @@ option{
   background-color: transparent;
   color: goldenrod;
   font-weight: bold;
+  margin-left: 10px;
 }
 select{
   margin-left: 10px;
   background-color: transparent;
 }
 input{
+
   background-color:transparent ;
 }
 label{
+  margin-left: 10px;
   background-color: transparent;
 }
 button{
@@ -178,60 +238,62 @@ button,a{
 }
 /* footer part  */
 
-h5 {
-  font-style: italic;
-}
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 20px;
+  left: 10px;
+  right: 10px;
+  padding: 10px;
+  height: 280px;
+  width: 100%;
 }
-
-.footer-container {
+.container{
   display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin:  auto;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
 }
-
+.links{
+  margin-left: 200px;
+}
 .footer-section {
-  flex: 1;
-  margin-right: 20px;
-  margin-left: 10px;
+  right: 10px;
+  left: 10px;
+  height: 120px;
+  /* bottom: px; */
+  display: flex;
+  align-items:center;
 }
-li {
+
+.footer-section li {
   display: inline-block;
-}
-
-.footer-section h3 {
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  margin: 0;
+  bottom: 10px;
+  position: relative;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 0px;
 }
 
 .footer-section ul li {
   font-style: italic;
   margin-bottom: 5px;
   margin-left: 15px;
-  margin-top: 40px;
 }
 
 .footer-section a {
   color: #fff;
   text-decoration: none;
+  margin-bottom: 0px;
+}
+.footer-section a:hover{
+  color:goldenrod;
 }
 
 .footer-bottom {
-  margin-top: 20px;
+  margin-top: 5px;
   font-style: italic;
 }
