@@ -1,82 +1,92 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   font-style: italic;
+  box-sizing: border-box;
 }
-html{
-  scroll-behavior: smooth
+html {
+  scroll-behavior: smooth;
 }
 .container-fluid {
-  background-color:rgba(95, 92, 92,1);
+  background-color: rgba(95, 92, 92, 1);
   position: fixed;
   z-index: 20;
   top: 0px;
   left: 0px;
-  right: 10px;
-  width: 1490px;
+  /* left: 20px; */
+  width: 100%;
 }
 /* corosal outer container */
-.carousel-fade{
+.carousel-fade {
   top: 70px;
   height: 615px;
-  width: 100%;
+  width: 80%;
+  color: red;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 /* corosal inner container */
-#corsl{
+#corsl {
   height: 600px;
   width: 100%;
 }
 /* corosal 2 outer container */
-.outcont{
-  height: 300px;
-width: 1400px;
-margin-left: 3%;
+.outcont {
+  height: 450px;
+  width: 100%;
+  background-color: rgba(206, 219, 240, 0.6);
+
+  /* margin-left: 3%; */
 }
-.incont{
+.incont {
   height: 415px;
   width: 1265px;
   /* background-color: red; */
   margin-left: 100px;
 }
-.h{display: flex;
-width: 1490px;
-justify-content: center;
-height: 50px;
-margin-right: 10px;
-  margin-left:10px;
-  background-color: rgba(140, 185, 227, 0.7);
+.h {
+  margin-top: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  background-color: rgb(71, 68, 59);
 }
-.cards-wrapper{
+.cards-wrapper {
   display: flex;
   width: 1400px;
   margin-left: 120px;
-  }
-.card{
-  margin-left: 20px;
-  margin: 0.5em; 
-  width: calc(/3);
+  /* background-color: rgba(206, 219, 240,0.8); */
 }
-#coritm2{
-    display: flex;
-    }
-#coritm3{
-      display: flex;
-      }
+.crcard {
+  margin-left: 20px;
+  margin: 0.5em;
+  width: calc(1490 / 3);
+}
+.card img {
+  margin-left: 0px;
+}
+#coritm2 {
+  display: flex;
+}
+#coritm3 {
+  display: flex;
+}
 /* corosal2 prev */
-.carousel-control-prev{
+.carousel-control-prev {
   background-color: black;
   margin-top: 150px;
 }
 /* corosal2 next  */
-.carousel-control-next{
+.carousel-control-next {
   background-color: black;
   margin-top: 150px;
 }
-.background{
+.background {
   background-image: url(floral-background-6622475_1280.png);
   background-position: center;
   background-size: cover;
@@ -86,72 +96,153 @@ margin-right: 10px;
   position: fixed;
   top: 0px;
   z-index: -20;
-  left: 10px;
-  right: 20px;
+  /* left: 10px;
+  right: 20px; */
 }
 
 .text p {
   font-size: 60px;
-  margin-left:45%;
+  margin-left: 45%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.text2 {
-  font-size: 60px;
-  margin-left: 45%;
-  padding-top: 20px;
-  padding-bottom: 10px;
+
+.crcard:hover {
+  background-color: rgba(255, 234, 176, 0.4);
 }
-.dtexts p {
-  text-align: justify;
-  width: 650px;
-  margin-right: 10px;
+.dtexts {
+  background-color: red;
+  width: 1490px;
+  height: 400px;
 }
-.card:hover{
-height: 125px;
-}
-.dtexts{
-  height: 900px;
-  width:100%;
-  margin-bottom: 50px;
-}
-.cards {
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card {
+.crcard {
   margin-left: 50px;
 }
 .navbar {
   margin-top: 0px;
 }
 #nav-link {
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
-.d-flex{
+.d-flex {
   margin-left: 400px;
 }
-.nav-item{
+.nav-item {
   font-size: 22px;
 }
 #carouselExampleSlidesOnly {
-  background-color: grey;
+  background-color: rgba(206, 219, 240, 0.6);
   width: 98%;
-  margin-left: 10px;
 }
-/* grid */
-.grid{
-  height: 400px;
-  width: 90%;
-  border: 2px solid black;
+.container {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 98%;
+}
+.text2 {
+  margin-top: -24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(85, 90, 84, 0.926);
 }
 
+/* grid */
+
+.gridout {
+  margin-top: -24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(206, 219, 240, 0.6);
+}
+.gridbox {
+  margin-top: 30px;
+  width: 800px;
+  height: 500px;
+}
+.gridbox img {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+/* best property */
+.bstprop {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 99%;
+  height: 100vh;
+  margin-bottom: 20px;
+  background-color: green;
+}
+.rows{
+  display: flex;
+  width: 100%;
+  height: 320px;
+  margin-bottom: 20px;
+}
+.crd {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 260px;
+  position: relative;
+  /* background-color: red; */
+}
+.bstprop img {
+  border-radius: 20px;
+  /* margin-left: 20px; */
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+.CB {
+  width: 100%;
+  height: 300px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgba(206, 219, 240, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition-duration: 0.6s;
+}
+.CB:hover {
+  opacity: 1;
+}
+.CB h5 {
+  font-size: 20px;
+  color: greenyellow;
+  margin-bottom: 15px;
+}
+.CB p {
+  font-size: 19px;
+  color: yellow;
+}
+.CB > * {
+  transform: translateY(25px);
+  transition-duration: 0.6s;
+}
+.CB:hover > * {
+  transform: translateY(0px);
+}
 /* icon animation */
 
 .flip-vertical-left {
-    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.8s 3 both;
-            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.8s 3 both;
+  -webkit-animation: flip-vertical-left 0.4s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.8s 3 both;
+  animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    0.8s 3 both;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2023-12-21 12:12:28
@@ -165,33 +256,33 @@ height: 125px;
  * animation flip-vertical-left
  * ----------------------------------------
  */
- @-webkit-keyframes flip-vertical-left {
+@-webkit-keyframes flip-vertical-left {
   0% {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
   }
   100% {
     -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
 }
 @keyframes flip-vertical-left {
   0% {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
   }
   100% {
     -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
 }
 
 /* search floting windo */
 
-.search{
+.search {
   display: flex;
   position: absolute;
-  background-color:rgba(92, 119, 144, 0.5);
+  background-color: rgba(92, 119, 144, 0.5);
   z-index: 5;
   width: 32%;
   right: 35px;
@@ -199,33 +290,32 @@ height: 125px;
   border-radius: 7%;
   color: goldenrod;
 }
-#heding1{
+#heding1 {
   margin-left: 10px;
   font-size: 35px;
 }
-label{
+label {
   color: goldenrod;
   font-weight: bold;
 }
-option{
+option {
   background-color: transparent;
   color: goldenrod;
   font-weight: bold;
   margin-left: 10px;
 }
-select{
+select {
   margin-left: 10px;
   background-color: transparent;
 }
-input{
-
-  background-color:transparent ;
+input {
+  background-color: transparent;
 }
-label{
+label {
   margin-left: 10px;
   background-color: transparent;
 }
-button{
+button {
   height: 40px;
   width: 101px;
   border-radius: 15px;
@@ -233,7 +323,8 @@ button{
   margin-left: 20px;
   margin-bottom: 10px;
 }
-button,a{
+button,
+a {
   color: black;
 }
 /* footer part  */
@@ -243,27 +334,20 @@ footer {
   color: #fff;
   text-align: center;
   left: 10px;
-  right: 10px;
+  right: 15px;
   padding: 10px;
   height: 280px;
-  width: 100%;
+  width: 99.45%;
 }
-.container{
-  display: flex;
-  justify-content: center;
-  height: 150px;
-  width: 100%;
-}
-.links{
+.links {
   margin-left: 200px;
 }
 .footer-section {
-  right: 10px;
+  right: 15px;
   left: 10px;
-  height: 120px;
-  /* bottom: px; */
+  height: 113px;
   display: flex;
-  align-items:center;
+  align-items: end;
 }
 
 .footer-section li {
@@ -289,11 +373,14 @@ footer {
   text-decoration: none;
   margin-bottom: 0px;
 }
-.footer-section a:hover{
-  color:goldenrod;
+.footer-section a:hover {
+  color: goldenrod;
 }
 
 .footer-bottom {
   margin-top: 5px;
   font-style: italic;
+}
+.links p {
+  width: 150px;
 }
